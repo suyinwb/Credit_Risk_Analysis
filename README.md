@@ -6,13 +6,9 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 
 ## Overview of Project
 
-Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, you’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, you’ll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once you’re done, you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
-
 ### Purpose
 
-* Deliverable 1: Use Resampling Models to Predict Credit Risk
-* Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
-* Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
+Using the credit card credit dataset from LendingClub, a peer-to-peer lending services company, you’ll oversample the data using the RandomOverSampler and SMOTE algorithms, and undersample the data using the ClusterCentroids algorithm. Then, you’ll use a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, you’ll compare two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Once you’re done, you’ll evaluate the performance of these models and make a written recommendation on whether they should be used to predict credit risk.
 
 ## Analysis And Challenges
 
@@ -20,18 +16,21 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 
 #### 1. Decomposing the Ask
 
+* Deliverable 1: Use Resampling Models to Predict Credit Risk
+* Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
+* Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
 
 #### 2. Identify the Datasource
-
+* LoanStats_2019Q1.csv for 68817 records. Dataset is imbalanced with 68470 low risk and 347 high risk.
 
 ### 3. Define Strategy & Metrics
-**Resource:** Google Colab, PySpark, AWS RDS, AWS S3, Postgres 12
+**Resource:** Python, numpy, pandas, pathlib, collections, sklearn, imblearn
 
 #### 4. Data Retrieval Plan
-
+NA
 
 #### 5. Assemble & Clean the Data
-
+NA
 
 #### 6. Analyse for Trends
 
