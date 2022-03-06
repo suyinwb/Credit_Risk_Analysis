@@ -52,8 +52,6 @@ From the total loans of  68817 there are:
 ### Oversampling
 #### Naive Random Oversampling
 
->Random Oversampling
-
 ![Random Oversampling](resources/nro_total.png)
 
 Random oversampling produced 51352 high_risk samples to match low_risk.  
@@ -71,8 +69,6 @@ Random oversampling produced 51352 high_risk samples to match low_risk.
   - low risk: 0.68  means that this model correctly classify and flags 68% low risk loans
 
 #### SMOTE (Synthetic Minority Over-sampling TEchnique) Oversampling
-
->SMOTE Oversampling
 
 ![SMOTE Oversampling](resources/smote_total.png)
 
@@ -92,8 +88,6 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ### Undersampling
 
->Undersampling
-
 ![Undersampling](resources/undersampling_total.png)
 
  Undersampling produced 260 low_risk samples to match high_risk.   
@@ -111,8 +105,6 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
   - low risk: 0.57  means that this model correctly classify and flags 57% low risk loans
 
 ### SMOTEENN: Combination (Over and Under) Sampling
-
->Combination Sampling
 
 ![cs](resources/smoteen_total.png)
 
@@ -132,7 +124,7 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ### Balanced Random Forest Classifier
 
->Balanced Random Forest
+>Balanced Random Forest Results
 
 ![rf](resources/rf_results.png)
 
@@ -146,7 +138,7 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ### Easy Ensemble AdaBoost Classifier
 
->Easy Ensemble AdaBoost
+>Easy Ensemble AdaBoost Results
 
 ![ee](resources/ee_results.png)
 
@@ -168,7 +160,7 @@ Right now, it seems like Easy Ensemble is the better model for our prediction. H
 
 Due to the low precision score above, even Easy Ensemble is not a good model for LendingClub to predict high and low risk loan holders.
 
-In summary, I will not recommend any of the prediction models above to LendingClub. 
+In summary, I will not recommend any of the prediction models above to LendingClub.
 
 ## Appendix
 
