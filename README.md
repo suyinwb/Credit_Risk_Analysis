@@ -96,7 +96,7 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ![Undersampling](resources/undersampling_total.png)
 
- low_risk samples to match high_risk.  
+ Undersampling produced 260 low_risk samples to match high_risk.   
 
 >Undersampling Results
 
@@ -110,25 +110,54 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
   - high risk: 0.61 means that this model correctly classify and flags 61% high risk loans. That means 39% high risk were not flagged.
   - low risk: 0.57  means that this model correctly classify and flags 57% low risk loans
 
-### Combination (Over and Under) Sampling
+### SMOTEENN: Combination (Over and Under) Sampling
 
 >Combination Sampling
 
-![cs](resources/combinationsampling_total.png)
+![cs](resources/smoteen_total.png)
 
- low_risk samples to match high_risk.  
+ SMOTEENN produced 68460 high_risk samples and 62011 low_risk samples. 
 
 >Combination Sampling Results
 
-![sc](resources/combinationsampling_results.png)
+![sc](resources/smoteen_results.png)
 
-* Balance accuracy score of 0.590 means that this model correctly classify 59% the loans correctly according to high and low risks.
+* Balance accuracy score of 0.6375 means that this model correctly classify 63.7% the loans correctly according to high and low risks.
 * Precision score
   - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
   - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
 * Recall (sensitivity) score
-  - high risk: 0.61 means that this model correctly classify and flags 61% high risk loans. That means 39% high risk were not flagged.
+  - high risk: 0.70 means that this model correctly classify and flags 70% high risk loans. That means 30% high risk were not flagged.
   - low risk: 0.57  means that this model correctly classify and flags 57% low risk loans
+
+### Balanced Random Forest Classifier
+
+>Balanced Random Forest
+
+![rf](resources/rf_results.png)
+
+* Balance accuracy score of 0.672 means that this model correctly classify 67.2% the loans correctly according to high and low risks.
+* Precision score
+  - high risk: 0.73 means that this model correctly classify and flags 73% high risk loans. That means 27% of the flagged high risk were not actually high risk.
+  - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
+* Recall (sensitivity) score
+  - high risk: 0.34 means that this model correctly classify and flags 34% high risk loans. That means 66% high risk were not flagged.
+  - low risk: 1  means that this model correctly classify and flags 100% low risk loans
+
+### Easy Ensemble AdaBoost Classifier
+
+>Easy Ensemble AdaBoost
+
+![ee](resources/ee_results.png)
+
+* Balance accuracy score of 0.6375 means that this model correctly classify 63.7% the loans correctly according to high and low risks.
+* Precision score
+  - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
+  - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
+* Recall (sensitivity) score
+  - high risk: 0.70 means that this model correctly classify and flags 70% high risk loans. That means 30% high risk were not flagged.
+  - low risk: 0.57  means that this model correctly classify and flags 57% low risk loans
+
 
 ## Summary
 
