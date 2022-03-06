@@ -116,7 +116,7 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ![cs](resources/smoteen_total.png)
 
- SMOTEENN produced 68460 high_risk samples and 62011 low_risk samples. 
+ SMOTEENN produced 68460 high_risk samples and 62011 low_risk samples.
 
 >Combination Sampling Results
 
@@ -150,16 +150,25 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ![ee](resources/ee_results.png)
 
-* Balance accuracy score of 0.6375 means that this model correctly classify 63.7% the loans correctly according to high and low risks.
+* Balance accuracy score of 0.92.54 means that this model correctly classify 92.5% the loans correctly according to high and low risks.
 * Precision score
-  - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
+  - high risk: 0.07 means that this model correctly classify and flags 7% high risk loans. That means 93% of the flagged high risk were not actually high risk.
   - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
 * Recall (sensitivity) score
-  - high risk: 0.70 means that this model correctly classify and flags 70% high risk loans. That means 30% high risk were not flagged.
-  - low risk: 0.57  means that this model correctly classify and flags 57% low risk loans
-
+  - high risk: 0.91 means that this model correctly classify and flags 91% high risk loans. That means 9% high risk were not flagged.
+  - low risk: 0.94  means that this model correctly classify and flags 94% low risk loans.
 
 ## Summary
+
+From all the models above, only Easy Ensemble AdaBoost Classifier has a higher accuracy at 92.5%. The rest of the models only have accuracy scores between 59% to 67%.
+
+Easy Ensemble model also has a high recall / sensitivity score for high risk as 91%, meaning it correctly classify 91% of high risk. The rest of the models do not have such accuracy hovering around 60% accuracy. High precision accuracy is important in order to minimise potential loan holders who have higher chance of defaulting the loans.
+
+Right now, it seems like Easy Ensemble is the better model for our prediction. However Easy Ensemble has precision score of only 7% for high risk, meaning that 93% of the high risk flagged are actually low risk loans. This is actually not good for LendingClub as it will mean a high loss of potential business.
+
+Due to the low precision score above, even Easy Ensemble is not a good model for LendingClub to predict high and low risk loan holders.
+
+In summary, I will not recommend any of the prediction models above to LendingClub. 
 
 ## Appendix
 
