@@ -85,8 +85,8 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 * Balance accuracy score of 0.6595 means that this model correctly classify 65.9% the loans correctly according to high and low risks.
 * Precision score
- - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
- - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
+  - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
+  - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
 * Recall (sensitivity) score
   - high risk: 0.64 means that this model correctly classify and flags 64% high risk loans. That means 36% high risk were not flagged.
   - low risk: 0.68  means that this model correctly classify and flags 68% low risk loans
