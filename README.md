@@ -30,7 +30,8 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 NA
 
 #### 5. Assemble & Clean the Data
-Null values dropped and columns name changed so Data Scientist can understand the values better. 
+* Null values dropped and columns name changed so Data Scientist can understand the values better.
+* Random State = 1, used as fixed seed for all models.
 
 #### 6. Analyse for Trends
 
@@ -44,16 +45,60 @@ The "Proper" Conclusion is indicated below in [Summary](#summary)
 
 ## Analysis
 
+From the total loans of  68817 there are:
+* low risk: 68470
+* high risk: 347
 
+### Oversampling
+#### Naive Random Oversampling
 
->Paid  Total Reviews
+>Random Oversampling
 
-![paid](resources/paid_total.png)
+![Random Oversampling](resources/nro_total.png)
 
-There is a total of _**1207 of paid reviews**_ that have received 20 or more helpful votes and those helpful votes are 50% or more than total votes.
+Random oversampling produced 51352 high_risk samples to match low_risk.  
+
+>Random Oversampling Results
+
+![Random Oversampling](resources/nro_results.png)
+
+* Balance accuracy score of 0.6595 means that this model correctly classify 65.9% the loans correctly according to high and low risks.
+* Precision score
+ - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
+ - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
+* Recall (sensitivity) score
+  - high risk: 0.64 means that this model correctly classify and flags 64% high risk loans. That means 36% high risk were not flagged.
+  - low risk: 0.68  means that this model correctly classify and flags 68% low risk loans
+of 0.68 means that this model quantified the number of positive class predictions made out of all positive examples 67% of the time.
+
+#### SMOTE Oversampling
+
+>SMOTE Oversampling
+
+![SMOTE Oversampling](resources/smote_total.png)
+
+Random oversampling produced 51352 high_risk samples to match low_risk.  
+
+>SMOTE Oversampling Results
+
+![SMOTE Oversampling](resources/smote_results.png)
+
+* Balance accuracy score of 0.6595 means that this model correctly classify 65.9% the loans correctly according to high and low risks.
+* Precision score
+ - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
+ - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
+* Recall (sensitivity) score
+  - high risk: 0.64 means that this model correctly classify and flags 64% high risk loans. That means 36% high risk were not flagged.
+  - low risk: 0.68  means that this model correctly classify and flags 68% low risk loans
+of 0.68 means that this model quantified the number of positive class predictions made out of all positive examples 67% of the time.
+
 
 ## Summary
 
 ## Appendix
 
 ### References
+
+* Random Forest : https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html
+
+* Easy Ensemble : https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html
