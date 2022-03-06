@@ -6,3 +6,6 @@ config.js
 
 #practice directory
 practice/*
+
+#data file
+LoanStats*
