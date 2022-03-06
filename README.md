@@ -67,6 +67,7 @@ Random oversampling produced 51352 high_risk samples to match low_risk.
   - high risk: 0.01 means that this model correctly classify and flags 1% high risk loans. That means 99% of the flagged high risk were not actually high risk.
   - low risk: 1.00  means that this model correctly classify and flags 100% low risk loans
 * Recall (sensitivity) score
+  - Average score: 
   - high risk: 0.64 means that this model correctly classify and flags 64% high risk loans. That means 36% high risk were not flagged.
   - low risk: 0.68  means that this model correctly classify and flags 68% low risk loans
 of 0.68 means that this model quantified the number of positive class predictions made out of all positive examples 67% of the time.
