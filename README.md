@@ -96,7 +96,7 @@ SMOTE oversampling produced 51352 high_risk samples to match low_risk.
 
 ![Undersampling](resources/undersampling_total.png)
 
-Undersampling produced 260 low_risk samples to match high_risk.  
+ low_risk samples to match high_risk.  
 
 >Undersampling Results
 
