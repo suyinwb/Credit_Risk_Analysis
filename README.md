@@ -30,14 +30,14 @@ Using the credit card credit dataset from LendingClub, a peer-to-peer lending se
 NA
 
 #### 5. Assemble & Clean the Data
-NA
+Null values dropped and columns name changed so Data Scientist can understand the values better. 
 
 #### 6. Analyse for Trends
 
 The analysis is indicated below in [Analysis](#analysis)
 
 #### 7. Acknowledging Limitations
-
+Need more knowledge on statistics.
 
 #### 8. Making the Call:
 The "Proper" Conclusion is indicated below in [Summary](#summary)
